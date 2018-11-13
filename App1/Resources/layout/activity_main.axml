@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+		android:text=""
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/player1"
+		android:layout_marginLeft="10dp"
+		android:textSize="20dp"
+		android:layout_alignParentLeft="true" 
+	/>
+	<TextView
+		android:text=""
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/player2"
+		android:layout_marginLeft="70dp"
+		android:textSize="20dp"
+		android:layout_centerHorizontal="true" 
+	/>
+	<TextView
+		android:text=""
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/player3"
+		android:layout_marginRight="10dp"
+		android:textSize="20dp"
+		android:layout_alignParentRight="true" 
+	/>
+	<TextView
+		android:text=""
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/player4"
+		android:layout_marginLeft="10dp"
+		android:textSize="20dp"
+		android:layout_below="@id/player1"
+	/>
+	<TextView
+		android:text=" "
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/player5"
+		android:layout_marginLeft="280dp"
+		android:textSize="20dp"
+		android:layout_below="@id/player2"
+		android:layout_centerHorizontal="true" 
+	/>
+	<TextView
+		android:text=""
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/player6"
+		android:layout_marginRight="10dp"
+		android:textSize="20dp"
+		android:layout_below="@id/player3"
+	/>
+	<EditText
+		android:inputType="textPersonName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25dp"
+		android:minHeight="25dp"
+		android:layout_below="@id/player5"
+		android:id="@+id/name"
+		android:layout_marginTop="25.5dp"/>
+	<Button
+		android:text="Add"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/name"
+		android:id="@+id/add"
+		android:layout_centerHorizontal="true" />
+	<Button
+		android:text="Start"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/add"
+		android:id="@+id/start"
+		android:layout_centerHorizontal="true"/>
+	<TextView
+		android:text="Első Toborzás"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/player4"
+		android:id="@+id/phase1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="70dp"
+		android:textSize="40dp"
+		android:visibility="invisible" />
+	<TextView
+		android:text="Aktiválás"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/phase1"
+		android:id="@+id/phase2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="70dp"
+		android:textSize="40dp"
+		android:visibility="invisible" />
+	<TextView
+		android:text="MásodikTobozrás (Feláldozás)"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/phase2"
+		android:id="@+id/phase3"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="70dp"
+		android:textSize="40dp"
+		android:gravity="center"
+		android:visibility="invisible" />
+	<Button
+		android:text="Previous"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/phase3"
+		android:id="@+id/pre"
+		android:layout_marginLeft="40dp"
+		android:visibility="invisible" />
+	<Button
+		android:text="Next"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/phase3"
+		android:id="@+id/next"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="40dp"
+		android:visibility="invisible" />
+	<TextView
+		android:text="Turn: 1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/phase3"
+		android:id="@+id/turn"
+		android:textSize="30dp"
+		android:layout_centerHorizontal="true" 
+		android:visibility="invisible"
+	/>
+
+	
+</RelativeLayout>
